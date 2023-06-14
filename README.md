@@ -28,6 +28,7 @@ To get started with the project, you can follow these steps:
 ## Project Structure
 
 The project has been structured using a modern approach to file organization, with components, styles, and utilities grouped together in separate directories. Here's a brief overview of the project structure:
+```bash
 src/
 ├── assets/
 │   ├── images/
@@ -61,6 +62,7 @@ src/
     ├── GlobalStyle.ts
     ├── theme.ts
     └── ...
+ ```
 ## Deployment
 
 The app has been deployed to Github Pages and can be accessed at https://bilalyounes.github.io/BetterCallStore/
