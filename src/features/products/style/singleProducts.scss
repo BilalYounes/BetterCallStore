@@ -1,0 +1,218 @@
+.wrapper{
+  width: 25rem;
+  height: 42rem;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+  &:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+  }
+  
+  .container{
+    width:100%;
+    height:100%;
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      width: 100%;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      .imge{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+      }
+    }
+    .bottom{
+      width: 200%;
+      height: 20%;
+      transition: transform 0.5s;
+      &.clicked{
+        transform: translateX(-50%);
+      }
+      .material{
+        font-size: 2.6rem;
+       }
+      h1{
+          margin:0;
+          padding:0;
+      }
+      p{
+          margin:0;
+          padding:0;
+      }
+      .left{
+        height:100%;
+        width: 50%;
+        background: #f4f4f4;
+        position:relative;
+        float:left;
+        
+        .details{
+          padding: 1rem;
+          float: left;
+          width: calc(70% - 4rem);
+          
+          p{
+            margin: .7rem 0px;
+            font-size: 1.4rem;
+          }
+          .rate{
+            font-size: 1.7rem;
+          }
+        }
+        .buy{
+          float:right;
+          width: calc(30% - 2px);
+          height:100%;
+          background: #f1f1f1;
+          transition: background 0.5s;
+          border-left:solid thin rgba(0,0,0,0.1);
+          i{
+            padding:3rem;
+            color: #254053;
+            transition: transform 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+          }
+          &:hover{
+            background: #A6CDDE;
+          }
+          &:hover i{
+            transform: translateY(.5rem);
+            color:#00394B;
+          }
+        }
+      }
+      .right{
+        width: 50%;
+        background: #A6CDDE;
+        color: white;
+        float:right;
+        height:200%;
+        overflow: hidden;
+        .details{
+          padding: 2rem;
+          float: right;
+          width: calc(70% - 4rem);
+          p{
+            margin: .7rem 0px;
+            font-size: 1.4rem;
+          }
+        }
+        .done{
+          width: calc(30% - 2px);
+          float:left;
+          transition: transform 0.5s;
+          border-right:solid thin rgba(255,255,255,0.3);
+          height:50%;
+          i{
+            font-size:3rem;
+            padding:3rem;
+            color: teal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .remove{
+          width: calc(30% - 2px);
+          clear: both;
+          border-right:solid thin rgba(255,255,255,0.3);
+          height:60%;
+          background: #BC3B59;
+          transition: transform 0.5s, background 0.5s;
+          &:hover{
+            background: #9B2847;
+          }
+          &:hover i{
+            transform: translateY(5px);
+          }
+          i{
+            transition: transform 0.5s;
+            font-size:3rem;
+            padding:3rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        &:hover{
+          .remove, .done{
+            transform: translateY(-100%);
+          }
+        }
+      }
+    }
+  }
+  
+  .inside{
+    z-index:9;
+    background: #92879b81;
+    width:14rem;
+    height:14rem;
+    position: absolute;
+    top: -7rem;
+    right: -7rem;
+    border-radius: 0px 0px 20rem 20rem;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+     .material{
+      font-size: 2.6rem;
+     }
+    .icon{
+      position:absolute;
+      right:8.5rem;
+      top:8.5rem;
+      color:white;
+      opacity: 1;
+    }
+    &:hover{
+      width:100%;
+      right:0;
+      top:0;
+      border-radius: 0;
+      height:80%;
+      .icon{
+        opacity: 0;
+        right:1.5rem;
+        top:1.5rem;
+      }
+      .contents{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+      }
+    }
+    .contents{
+      padding: 5%;
+      opacity: 0;
+      transform: scale(0.5);
+      transform: translateY(-200%);
+      transition: opacity 0.2s, transform 0.8s;
+      table{
+        text-align:left;
+        width:100%;
+      }
+      h1, p, table{
+        color: white;
+        text-align: center;
+      }
+      p{
+        font-size:1.3rem;
+      }
+    }
+  }
+}
+ 

@@ -1,0 +1,56 @@
+.products {
+  display: flex;
+  flex-direction: column;
+
+  .newproducts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.158);
+    width: 100%;
+
+    .address {
+      display: flex;
+      gap: .7rem;
+      font-size: 1.3rem;
+      margin-left: 3rem;
+      .title1 {
+        font-weight: bold;
+      }
+    }
+    .btnproducts {
+      display: flex;
+      gap: .5rem;
+      width: 16%;
+      .selectbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border: 1px solid rgba(128, 128, 128, 0.158);
+      }
+    }
+  }
+  .grid {
+    padding: 3rem;
+    gap: .5rem;
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .skelton {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .pagination {
+    padding: 2rem;
+  }
+}
+.PaginationWrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .6rem;
+}

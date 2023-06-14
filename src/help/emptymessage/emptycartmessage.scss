@@ -1,0 +1,53 @@
+/* EmptyCartMessage.scss */
+
+.empty-cart-message {
+    height: 70vh;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .empty-cart-image {
+      max-width: 200px;
+      margin-bottom: 20px;
+      animation: bounce 1.5s ease infinite;
+    }
+  
+    p {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    .shop-button {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #e31837;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    
+        &:hover {
+          background-color: #c2142e;
+        }
+      }
+  }
+  

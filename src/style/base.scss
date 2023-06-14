@@ -1,0 +1,46 @@
+@import "./utilities.scss";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+*:link,
+*:visited{
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+    
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(phone){
+        font-size: 45%;
+    }
+    
+   
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#root{
+
+    --main-color: rgb(72,73,147);
+    
+    --second-color: rgb(142,175,242);
+
+    --third-color:teal
+
+}

@@ -1,0 +1,140 @@
+.product {
+  padding: 1rem;
+  height: 27rem;
+  position: relative;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 7px 9px 10px -2px rgba(199, 199, 199, 0.75);
+  -webkit-box-shadow: 7px 9px 10px -2px rgba(199, 199, 199, 0.75);
+  -moz-box-shadow: 7px 9px 10px -2px rgba(199, 199, 199, 0.75);
+  transition: all 0.5s ease;
+  opacity: 1;
+  &:hover {
+    /* background-color: #e9f5f5; */
+    transform: scale(1.05);
+  }
+  
+  .removeicon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+      color: white;
+      background-color: #e70a0a6c;
+      transform: scale(1);
+    }
+    .material{
+        font-size: 2rem;
+    }
+  }
+  .productdetails {
+    flex: 2;
+    display: flex;
+    img {
+      width: 60%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .details {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 1.6rem;
+      .span{
+        display: flex;
+        gap: .5rem;
+      }
+      .color{
+        display: flex;
+        gap: .8rem;
+      }
+      .productcolor {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: teal;
+      }
+      .productcolor2 {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: indigo;
+      }
+      .productcolor3 {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: black;
+      }
+    }
+  }
+  .pricedetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .productamountcontiner{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        .material{
+            &--add{
+                color: green;
+                font-size: 2rem;
+                cursor: pointer;
+                transition: all ease-in 0.2s;
+                &:hover{
+                    scale: 1.1;
+                }
+            }
+            &--remove{
+                color: red;
+                font-size: 2rem;
+                transition: all ease-in 0.2s;
+
+                cursor: pointer;
+                &:hover{
+                    scale: 1.1;
+                }
+            }
+
+        }
+        .productamount{
+            font-size: 2.4rem;
+            margin: .5rem;
+        }
+    }
+    .productprice {
+      font-size: 2.5rem;
+      font-weight: lighter;
+    }
+  }
+
+  &:hover > .removeicon {
+    opacity: 1;
+  }
+}
+.shrink {
+  animation: shrink 500ms ease-out;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
