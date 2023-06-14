@@ -36,31 +36,31 @@ src/
 │   └── ...
 ├── features/
 │   ├── cart/
-│   │   ├── cartServices.ts
-│   │   ├── CartView.tsx
-│   │   ├── style.scss
+│   │   ├── cartServices
+│   │   ├── CartView
+│   │   ├── style
 │   │   └── ...
 │   ├── products/
-│   │   ├── productsServices.ts
-│   │   ├── ProductView.tsx
-│   │   ├── style.scss
+│   │   ├── productsServices
+│   │   ├── ProductView
+│   │   ├── style
 │   │   └── ...
 │   └── ...
 ├── layouts/
-│   ├── NavBar.tsx
-│   ├── SideBar.tsx
-│   ├── Subheader.tsx
+│   ├── NavBar
+│   ├── SideBar
+│   ├── Subheader
 │   └── ...
 ├── pages/
-│   ├── CartPage.tsx
-│   ├── HomePage.tsx
+│   ├── CartPage
+│   ├── HomePage
 │   └── ...
 ├── routes/
-│   ├── index.tsx
+│   ├── index
 │   └── ...
 └── styled/
-    ├── GlobalStyle.ts
-    ├── theme.ts
+    ├── GlobalStyle
+    ├──
     └── ...
  ```
 ## Deployment
