@@ -30,37 +30,37 @@ To get started with the project, you can follow these steps:
 The project has been structured using a modern approach to file organization, with components, styles, and utilities grouped together in separate directories. Here's a brief overview of the project structure:
 src/
 ├── assets/
-│ ├── images/
-│ ├── fonts/
-│ └── ...
+│   ├── images/
+│   ├── fonts/
+│   └── ...
 ├── features/
-│ ├── cart/
-│ │ ├── cartServices
-│ │ ├── CartView
-│ │ ├── style
-│ │ └── ...
-│ ├── products/
-│ │ ├── productsServices
-│ │ ├── ProductView
-│ │ ├── style
-│ │ └── ...
-│ └── ...
+│   ├── cart/
+│   │   ├── cartServices.ts
+│   │   ├── CartView.tsx
+│   │   ├── style.scss
+│   │   └── ...
+│   ├── products/
+│   │   ├── productsServices.ts
+│   │   ├── ProductView.tsx
+│   │   ├── style.scss
+│   │   └── ...
+│   └── ...
 ├── layouts/
-│ ├── NavBar
-│ ├── SideBar
-│ ├── Subheader
-│ └── ...
+│   ├── NavBar.tsx
+│   ├── SideBar.tsx
+│   ├── Subheader.tsx
+│   └── ...
 ├── pages/
-│ ├── CartPage
-│ ├── HomePage
-│ └── ...
+│   ├── CartPage.tsx
+│   ├── HomePage.tsx
+│   └── ...
 ├── routes/
-│ ├── index.tsx
-│ └── ...
+│   ├── index.tsx
+│   └── ...
 └── styled/
-├── GlobalStyle
-├──
-└── ...
+    ├── GlobalStyle.ts
+    ├── theme.ts
+    └── ...
 ## Deployment
 
 The app has been deployed to Github Pages and can be accessed at https://bilalyounes.github.io/BetterCallStore/
